@@ -1,0 +1,15 @@
+footer {
+    background: #f3f4f6;
+    height: 10vh;
+}
+
+footer p {
+    text-align: center;
+    line-height: 10vh;
+}
+
+footer p a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}

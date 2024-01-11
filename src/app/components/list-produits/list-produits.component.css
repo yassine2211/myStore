@@ -1,0 +1,25 @@
+/* Ajoutez ces styles CSS dans votre fichier CSS ou votre balise style */
+.custom-table {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    border: 1px solid black;
+    padding: 8px;
+    /* Ajustez la valeur de remplissage selon vos besoins */
+  }
+  
+  .custom-table th {
+    background-color: #f2f2f2;
+    /* Ajoutez une couleur de fond si nécessaire */
+  }
+  
+  .custom-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+    /* Ajoutez une couleur de fond pour les lignes paires si nécessaire */
+  }
+  

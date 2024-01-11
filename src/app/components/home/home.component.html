@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="row">
+      <div class="form-group" style="display: flex; align-items: center;">
+          <input type="text" class="form-control" [(ngModel)]="term" name="a" placeholder="search" style="margin-right: 5px;">
+          <input type="submit" (click)="chercher(term)" class="btn btn-primary py-3 px-5" value="search">
+      </div>
+  </div>
+</div>
+
+<section class="content">
+    <h1>Nouveautés</h1>
+    <p>Notre nouveau catalogue avec les technologies les plus avancées</p>
+  <a  href="#prod">  <button>Decouvrir</button></a> 
+</section>
+<h1 class="produits_text">Nos Meilleurs ventes</h1>
+<section class="section_produits" id="prod">
+        <div class="produits">
+      <div class="carte" *ngFor="let i of produits">
+        <div class="img"><img [src]="getSafeImage(i.image)" alt=""></div>
+        <div class="desc">{{ i.categorie.name }}</div>
+        <div class="titre">{{i.name}}</div>
+        <div class="box">
+          <div class="prix">{{ i.prix }} DT</div>
+          <a href=""><button class="achat">Acheter</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
